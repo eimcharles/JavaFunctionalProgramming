@@ -1,6 +1,6 @@
 package functionalInterfaces.ExerciseOne.exampleTwo.EmailSenderOOP;
 
-public class Gmail implements EmailSender{
+public class Gmail implements EmailSender {
 
     @Override
     public void send() {
