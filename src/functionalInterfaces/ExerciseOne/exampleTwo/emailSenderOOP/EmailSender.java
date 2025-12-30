@@ -1,4 +1,4 @@
-package functionalInterfaces.ExerciseOne.exampleTwo.EmailSenderOOP;
+package functionalInterfaces.ExerciseOne.exampleTwo.emailSenderOOP;
 
 @FunctionalInterface
 public interface EmailSender {

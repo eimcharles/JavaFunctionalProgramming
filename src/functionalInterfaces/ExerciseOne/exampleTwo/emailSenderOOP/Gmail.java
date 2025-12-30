@@ -1,4 +1,4 @@
-package functionalInterfaces.ExerciseOne.exampleTwo.EmailSenderOOP;
+package functionalInterfaces.ExerciseOne.exampleTwo.emailSenderOOP;
 
 public class Gmail implements EmailSender {
 
