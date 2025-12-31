@@ -1,4 +1,4 @@
-package functionalInterfaces.ExerciseTwo;
+package functionalInterfaces.exerciseTwo;
 
 /**
  *      Domain class for Car Object

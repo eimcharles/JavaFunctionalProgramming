@@ -1,4 +1,4 @@
-package functionalInterfaces.ExerciseOne.exampleTwo.emailSenderOOP;
+package functionalInterfaces.exerciseOne.exampleTwo.emailSenderOOP;
 
 public class Main {
 

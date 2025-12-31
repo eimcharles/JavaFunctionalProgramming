@@ -1,9 +1,9 @@
-package functionalInterfaces.ExerciseTwo.exampleTwo;
+package functionalInterfaces.exerciseTwo.exampleTwo;
 
-import functionalInterfaces.ExerciseTwo.Brand;
-import functionalInterfaces.ExerciseTwo.Car;
-import functionalInterfaces.ExerciseTwo.FuelType;
-import functionalInterfaces.ExerciseTwo.User;
+import functionalInterfaces.exerciseTwo.Brand;
+import functionalInterfaces.exerciseTwo.Car;
+import functionalInterfaces.exerciseTwo.FuelType;
+import functionalInterfaces.exerciseTwo.User;
 
 import java.math.BigDecimal;
 import java.util.UUID;

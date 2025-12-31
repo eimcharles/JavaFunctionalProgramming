@@ -1,4 +1,4 @@
-package functionalInterfaces.ExerciseTwo;
+package functionalInterfaces.exerciseTwo;
 
 
 public enum FuelType {

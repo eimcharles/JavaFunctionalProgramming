@@ -1,4 +1,4 @@
-package functionalInterfaces.ExerciseOne.exampleOne;
+package functionalInterfaces.exerciseOne.exampleOne;
 
 public class PureFunctions {
 
