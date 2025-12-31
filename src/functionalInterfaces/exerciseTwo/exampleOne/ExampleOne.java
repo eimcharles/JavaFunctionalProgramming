@@ -1,6 +1,6 @@
 package functionalInterfaces.exerciseTwo.exampleOne;
 
-import functionalInterfaces.exerciseTwo.User;
+import domain.User;
 
 import java.util.List;
 import java.util.UUID;

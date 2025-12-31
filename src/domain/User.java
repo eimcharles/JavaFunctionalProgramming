@@ -1,4 +1,4 @@
-package functionalInterfaces.exerciseTwo;
+package domain;
 
 /**
  *      Domain class for User Object

@@ -1,4 +1,4 @@
-package functionalInterfaces.exerciseTwo;
+package domain;
 
 
 public enum FuelType {
