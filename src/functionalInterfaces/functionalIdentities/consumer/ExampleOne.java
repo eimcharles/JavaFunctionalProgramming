@@ -1,4 +1,4 @@
-package functionalInterfaces.functionalIdentities.consumer.consumer;
+package functionalInterfaces.functionalIdentities.consumer;
 
 import domain.Brand;
 import domain.Car;
