@@ -33,6 +33,8 @@ public class ExampleOne {
          *          - Collection modification
          *          - Broadcasting (e.g. Logging)
          *
+         *      A Consumer handles an object and performs a side effect.
+         *
          * */
 
         Car mercedes = new Car
