@@ -1,6 +1,6 @@
-package functionalInterfaces.exerciseOne.exampleTwo.emailSenderFunctional;
+package functionalInterfaces.oopVsFunctional.emailSenderFunctional;
 
-import functionalInterfaces.exerciseOne.exampleTwo.emailSenderOOP.EmailSender;
+import functionalInterfaces.oopVsFunctional.emailSenderOOP.EmailSender;
 
 public class Main {
 
