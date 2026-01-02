@@ -28,6 +28,8 @@ public class ExampleOne {
          *      - Data Retrieval (Database/API sourcing)
          *      - Deferred/Lazy Execution (Only running when needed)
          *
+         *      A Supplier provides an object of type T
+         *
          * */
 
         ///  Example 1 Object Instantiation
