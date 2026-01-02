@@ -1,4 +1,4 @@
-package functionalInterfaces.exerciseTwo.exampleOne;
+package functionalInterfaces.exerciseTwo.function;
 
 import domain.User;
 

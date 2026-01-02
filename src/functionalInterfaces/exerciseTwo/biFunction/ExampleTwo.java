@@ -1,4 +1,4 @@
-package functionalInterfaces.exerciseTwo.exampleTwo;
+package functionalInterfaces.exerciseTwo.biFunction;
 
 import domain.Brand;
 import domain.Car;
