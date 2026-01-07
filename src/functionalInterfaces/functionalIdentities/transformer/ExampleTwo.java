@@ -1,4 +1,4 @@
-package functionalInterfaces.exerciseTwo.biFunction;
+package functionalInterfaces.functionalIdentities.transformer;
 
 import domain.Brand;
 import domain.Car;
@@ -15,19 +15,25 @@ public class ExampleTwo {
     /**
      *      BiFunction < T, U, R > interface
      *
-     *      An extension of the Function interface that accepts two arguments.
+     *      Represents a function that accepts two arguments (T and U)
+     *      and produces a result of type R.
      *
-     *      Used for operations that combine or process two different inputs.
+     *      BiFunction is the "Transformer" of functional pipelines:
+     *      - Calculation: Combining two values to produce a result
+     *      - Aggregation: Merging two distinct objects into a single summary
+     *      - Contextual Transformation: Using one object to guide the transformation of another
      *
-     *      T (Input 1): The type of the first argument to the Function.
-     *      U (Input 2): The type of the second argument to the Function.
-     *      R (Output):  The type of the result produced by the Function.
+     *      T (Input 1): The type of the first argument.
+     *      U (Input 2): The type of the second argument.
+     *      R (Output): The type of the result of the function.
      *
-     **/
+     *      A BiFunction transforms objects of type T and U into a result of type R
+     *
+     * */
 
     public static void main(String[] args) {
 
-        ///  Example 1:
+        ///  Example 1: Aggregation
         System.out.println("Example one: using the BiFunction < T, U, R > interface to create a booking confirmation");
 
         User charles = new User
@@ -42,7 +48,7 @@ public class ExampleTwo {
         System.out.println(charlesBookingConfirmation);
         System.out.println();
 
-        ///  Example 2:
+        ///  Example 2: Chaining
         System.out.println("Example two: using the BiFunction < T, U, R > interface to create a chained formatted booking confirmation");
 
         String charlesFormattedBookingConfirmation = bookingConfirmationFormatted.apply(charles, mercedes);
@@ -50,11 +56,12 @@ public class ExampleTwo {
         System.out.println(charlesFormattedBookingConfirmation);
         System.out.println();
 
-        ///  Example 3:
-        System.out.println("Example three: using the BiFunction < T, U, R > interface to map the firstName and lastName to a User Object");
+        ///  Example 3: Calculation
+        System.out.println("Example three: using the BiFunction < T, U, R > interface to map the firstName and lastName to a user Object");
 
         User bobby = userMapper.apply("Bobby", "MacDinkel");
         System.out.println(bobby);
+        System.out.println();
 
     }
 

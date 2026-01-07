@@ -77,7 +77,7 @@ public class ExampleOne {
     static Function<Integer, Integer> multiplyByTen = number -> number * 10;
 
     /**
-     *      Chaining of functions:
+     *      Chaining of Functions:
      *
      *      The process of combining multiple Function < T, R > instances into a single function (pipeline).
      *
