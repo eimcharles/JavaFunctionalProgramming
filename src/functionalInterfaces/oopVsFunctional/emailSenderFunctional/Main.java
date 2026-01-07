@@ -9,7 +9,7 @@ public class Main {
         ///  Example 1: Anonymous Inner Class
         System.out.println("Example one: anonymous inner classes");
 
-        EmailSender senderAnonymous= new EmailSender() {
+        EmailSender senderAnonymous = new EmailSender() {
             @Override
             public void send() {
                     System.out.println("sending email using anonymous inner class...");
@@ -26,13 +26,13 @@ public class Main {
         senderLambda.send();
         System.out.println();
 
-        ///  Example 3: Behaviours over interfaces
+        ///  Example 3: Behaviors over interfaces
         System.out.println("Example three: lambdas over interfaces");
 
-        EmailSender hotmail = () -> System.out.println("Sending email using hotmail");
+        EmailSender hotmail = () -> System.out.println("Sending email using Hotmail");
         hotmail.send();
 
-        EmailSender gmail = () -> System.out.println("Sending email using gmail");
+        EmailSender gmail = () -> System.out.println("Sending email using Gmail");
         gmail.send();
 
     }
