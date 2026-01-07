@@ -22,13 +22,11 @@ public class ExampleOne {
          *      a single input argument and returns no result (void).
          *
          *      Consumer is expected to operate via side effects:
-         *
          *          - Changes world outside the function
          *
          *      T (Input): The type of the argument to be consumed.
          *
          *      Consumer methods are impure functions:
-         *
          *          - State Mutation
          *          - Collection modification
          *          - Broadcasting (e.g. Logging)
@@ -57,18 +55,18 @@ public class ExampleOne {
         System.out.println(mercedes);
         System.out.println();
 
-        /// Example 3 Chaining:
-        System.out.println("Example three: using Consumer < T > interface to chain the booking process and update the car status");
+        /// Example 3 Collection modification:
+        System.out.println("Example three: using Consumer < T > interface to modify a collection carList");
+        addCarToCarList.accept(mercedes);
+        addCarToCarList.accept(volkswagen);
+        carList.forEach(System.out::println);
+
+        /// Example 4 Definition-Time Chaining:
+        System.out.println("Example four: using Consumer < T > interface to chain the booking process and update the car status");
         System.out.println(volkswagen);
         processBookingAndUpdateCarStatus.accept(volkswagen);
         System.out.println(volkswagen);
         System.out.println();
-
-        /// Example 4 Collection modification:
-        System.out.println("Example four: using Consumer < T > interface to modify a collection carList");
-        addCarToCarList.accept(mercedes);
-        addCarToCarList.accept(volkswagen);
-        carList.forEach(System.out::println);
 
     }
 
@@ -90,8 +88,8 @@ public class ExampleOne {
 
     static Consumer<Car> updateCarStatus = car -> car.setCarBooked(true);
 
-    static Consumer<Car> processBookingAndUpdateCarStatus = processBooking.andThen(updateCarStatus);
-
     static Consumer<Car> addCarToCarList = car -> carList.add(car);
+
+    static Consumer<Car> processBookingAndUpdateCarStatus = processBooking.andThen(updateCarStatus);
 
 }

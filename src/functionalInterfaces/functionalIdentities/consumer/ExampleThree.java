@@ -4,6 +4,7 @@ import domain.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Map;
 import java.util.UUID;
 import java.util.function.BiConsumer;
 
@@ -17,13 +18,12 @@ public class ExampleThree {
          *      Represents an operation that accepts
          *      two input arguments and returns no result (void).
          *
-         *      BiConsumer is expected to operate via side effects:
+         *      BiConsumer is expected to operate via side effects.
          *
          *      T (Input): The type of the first argument to be consumed.
          *      U (Input): The type of the second argument to be consumed.
          *
          *      BiConsumer methods are impure functions:
-         *
          *      - Relational Logic
          *      - Map Processing
          *      - State Mutation across multiple identities
@@ -36,28 +36,40 @@ public class ExampleThree {
                 ("123_5",
                         new BigDecimal("139.00"), Brand.MERCEDES, FuelType.ELECTRIC);
 
+        Car bmw = new Car
+                ("123_7",
+                        new BigDecimal("129.00"), Brand.BMW, FuelType.ELECTRIC);
+
         User charles = new User(UUID.randomUUID(), "Charles", "Eimer");
+
+        User jerry = new User(UUID.randomUUID(), "Jerry", "LeBlond");
 
         Booking charlesBooking =  new Booking(UUID.randomUUID(), charles, mercedes, LocalDateTime.now());
 
-        ///  Example 1
+        ///  Example 1: Relational logic
         System.out.println("Example one: using the BiConsumer < T, U > to link two independent identities");
         userCar.accept(charles, mercedes);
         System.out.println();
 
-        ///  Example 2
+        ///  Example 2: State mutation across multiple entities
         System.out.println("Example two: using the BiConsumer < T, U > to link two independent identities and modifying the internal state of one object");
         assignUserToCar.accept(charles, mercedes);
         System.out.println();
 
-        ///  Example 3
-        System.out.println("Example three: using the BiConsumer < T, U > to link two independent identities and modifying the internal state of both object");
+        ///  Example 3: Map Processing - Map represents a registry for active bookings for user to car relationships
+        System.out.println("Example three: using the BiConsumer < T, U > for Map processing");
+        Map<User, Car> activeBooking = Map.of(jerry, bmw);
+        activeBooking.forEach(assignUserToCar);
+        System.out.println();
+
+        ///  Example 4: Relational logic and state mutation across multiple entities
+        System.out.println("Example four: using the BiConsumer < T, U > to link two independent identities and modifying the internal state of both object");
         releaseCarFromBooking.accept(mercedes, charlesBooking);
         System.out.println();
 
-        ///  Example 4
-        System.out.println("Example four: using the BiConsumer < T, U > to link two independent identities and use definition-time chaining");
-        cancelBooking.accept(mercedes, charlesBooking);
+        ///  Example 5: Definition time chaining
+        System.out.println("Example five: using the BiConsumer < T, U > to link two independent identities and use definition-time chaining");
+        releaseCarFromBookingAndRefundUser.accept(mercedes, charlesBooking);
         System.out.println();
 
     }
@@ -85,7 +97,6 @@ public class ExampleThree {
                 + " for car with registration number " + car.getRegistrationNumber());
     };
 
-    static BiConsumer<Car, Booking> cancelBooking =
-            releaseCarFromBooking.andThen(refundUser);
+    static BiConsumer<Car, Booking> releaseCarFromBookingAndRefundUser = releaseCarFromBooking.andThen(refundUser);
 
 }

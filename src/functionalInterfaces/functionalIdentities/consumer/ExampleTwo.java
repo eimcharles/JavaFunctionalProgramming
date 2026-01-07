@@ -32,7 +32,7 @@ public class ExampleTwo {
                 ("123_8",
                         new BigDecimal("99.00"), Brand.HONDA, FuelType.GASOLINE);
 
-        /// Example 1:  Definition-Time Chaining
+        /// Example 1: Definition-Time Chaining
         System.out.println("Example one: using Consumer < T > for definition-time chaining");
         processBookingAndUpdateCarStatus.accept(mercedes);
         processBookingAndUpdateCarStatus.accept(bmw);
@@ -41,12 +41,13 @@ public class ExampleTwo {
 
         /// Example 2: Execution-Time Chaining using the Stream class
         System.out.println("Example two: using Consumer < T > and the Stream class for execution-time chaining ");
-        Stream.of(mercedes, bmw, honda)                                                     ///  Conveyor belt of Car objects
+
+        Stream.of(mercedes, bmw, honda)                                             ///  Conveyor belt of Car objects
                 .filter(car -> car.getRentalPricePerDay()
-                        .compareTo(new BigDecimal("120.00")) > 0)                       /// The "Conditional" workflow
-                .peek(processBooking)                                                       /// Mapped to Consumer.accept()
-                .peek(updateCarStatus)                                                      /// Mapped to Consumer.accept()
-                .forEach(System.out::println);                                              /// Mapped to Consumer.accept()
+                        .compareTo(new BigDecimal("120.00")) > 0)              /// The "Conditional" workflow
+                .peek(processBooking)                                              /// peek() is mapped to Consumer.accept()
+                .peek(updateCarStatus)                                             /// peek() is mapped to Consumer.accept()
+                .forEach(System.out::println);                                     /// forEach() is mapped to Consumer.accept()
 
     }
 
@@ -57,8 +58,8 @@ public class ExampleTwo {
             car -> car.setCarBooked(true);
 
     /**
-     *      Chaining with Consumer Interface,
-     *      a sequence of actions on the same object.
+     *      Definition-Time Chaining with Consumer Functional Interface:
+     *      - Sequence of actions on the same object.
      * */
 
     static Consumer<Car> processBookingAndUpdateCarStatus = processBooking.andThen(updateCarStatus);
