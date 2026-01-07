@@ -23,7 +23,6 @@ public class ExampleOne {
          *      T (Output): The type of the result provided by the supplier.
          *
          *      Supplier methods can be pure, but are frequently impure:
-         *
          *      - Object Instantiation (Factory patterns)
          *      - Data Retrieval (Database/API sourcing)
          *      - Deferred/Lazy Execution (Only running when needed)
@@ -32,7 +31,7 @@ public class ExampleOne {
          *
          * */
 
-        ///  Example 1 Object Instantiation
+        ///  Example 1: Object Instantiation
         System.out.println("Example one: using Supplier< T > interface to create User Objects");
 
         User user1 = charles.get();
@@ -41,7 +40,7 @@ public class ExampleOne {
         System.out.println(user2);
         System.out.println();
 
-        ///  Example 2 Object Instantiation with definition-time chaining "Composition"
+        ///  Example 2: Object Instantiation and Lazy Execution with Definition-Time Chaining
         System.out.println("Example two: using Supplier< T > interface to create booked Car Objects using definition-time chaining");
 
         Car bookedCar1 = bookedMercedes.get();
@@ -50,7 +49,7 @@ public class ExampleOne {
         System.out.println(bookedCar2);
         System.out.println();
 
-        /// Example 3 Object Instantiation with Execution-Time Composition
+        /// Example 3: Object Instantiation with Execution-Time Chaining
         System.out.println("Example Three: using Supplier< T > interface and the Steam class for execution-time composition");
 
         Stream.generate(mercedes)                           /// The Supplier (Source)
@@ -73,11 +72,14 @@ public class ExampleOne {
             ("123_6",  new BigDecimal("119.00"), Brand.VOLKSWAGEN, FuelType.ELECTRIC);
 
     /**
+     *      Lazy Execution:
+     *      - Logic is defined but not executed until .get() is invoked.
+     *
+     *      - Only invoked when creating and setting a mercedes to booked
+     *        (Behavior that results in a car creating and state modification).
+     *
      *      Definition-Time Chaining (via Composition):
-     *
-     *      Logic Flow:
-     *
-     *      [Base Supplier] -> [Internal Mutation] -> [Returned Product]
+     *      - Logic Flow: Supplier -> Internal Mutation -> Returned Object
      * */
 
     static Supplier<Car> bookedMercedes = ()-> {
