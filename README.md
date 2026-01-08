@@ -16,4 +16,15 @@
 | **Transformer** | The "Mapper" | `Function<T, R>`, `BiFunction<T, U, R>` | [ExampleOne.java](src/functionalInterfaces/functionalIdentities/transformer/ExampleOne.java)<br>[ExampleTwo.java](src/functionalInterfaces/functionalIdentities/transformer/ExampleTwo.java) |
 
 ---
+#### Combinator Pattern Example: used to chain validation rules into a single, fluent pipeline.
+
+| Component | Source Link | Description |
+| :--- | :--- | :--- |
+| **Main Orchestrator** | [Main.java](./src/functionalInterfaces/combinatorPattern/Main.java) | Builds the validation chain and processes the `User` list. |
+| **Business Contract** | [UserValidator.java](./src/functionalInterfaces/combinatorPattern/UserValidator.java) | Functional interface for "shape" of `User` validation. |
+| **Concrete Rule** | [ReservedFirstNamesValidator.java](./src/functionalInterfaces/combinatorPattern/ReservedFirstNamesValidator.java) | Specific implementation for filtering system-reserved first names. |
+
+---
+
+
 
