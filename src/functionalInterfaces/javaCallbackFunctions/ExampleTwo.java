@@ -10,6 +10,7 @@ public class ExampleTwo {
 
     /**
      *      Inversion of control:
+     *      - The caller dictates the rules to the method.
      *
      *      The Main method acts like a container
      *      that injects specific validation
@@ -25,6 +26,7 @@ public class ExampleTwo {
      *      for dependencies.
      *
      *      Traditional Programming:
+     *      - The method dictates the rules to the caller.
      *
      *      The helloUser method act like a "Silo"
      *      where behavior is hardcoded
