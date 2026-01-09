@@ -1,4 +1,4 @@
-package domain;
+package com.eimc.domain;
 
 
 public enum FuelType {
