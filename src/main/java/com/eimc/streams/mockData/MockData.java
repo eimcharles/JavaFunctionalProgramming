@@ -18,31 +18,32 @@ public class MockData {
 
     public static List<User> getUsers() throws IOException {
 
-        // Locate the file in the src/main/resources folder and open a byte stream
-        InputStream inputStream = Resources.getResource("users.json").openStream();
+            try (
+                    InputStream inputStream = Resources.getResource("users.json").openStream()
+            ) {
 
-        // Read all bytes from the stream and convert them into a UTF-8 encoded String
-        String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+                // Read all bytes from the stream and convert them into a UTF-8 encoded String
+                String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
 
-        // Create a Type marker to bypass Java's Type Erasure and preserve the List<User> structure
-        Type listType = new TypeToken<ArrayList<User>>() {}.getType();
+                // Create a Type marker to bypass Java's Type Erasure and preserve the List<User> structure
+                Type listType = new TypeToken<ArrayList<User>>() {}.getType();
 
-        // Parse the JSON string into Java User objects and return the list
-        return new Gson().fromJson(json, listType);
+                // Parse the JSON string into Java User objects and return the list
+                return new Gson().fromJson(json, listType);
+
+            }
     }
 
     public static List<Car> getCars() throws IOException {
 
-        // Locate the file in the src/main/resources folder and open a byte stream
-        InputStream inputStream = Resources.getResource("cars.json").openStream();
+        try (
+                InputStream inputStream = Resources.getResource("cars.json").openStream()
+        ) {
 
-        // Read all bytes from the stream and convert them into a UTF-8 encoded String
-        String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+            String json = IOUtils.toString(inputStream, StandardCharsets.UTF_8);
+            Type listType = new TypeToken<ArrayList<Car>>() {}.getType();
+            return new Gson().fromJson(json, listType);
 
-        // Create a Type marker to bypass Java's Type Erasure and preserve the List<Car> structure
-        Type listType = new TypeToken<ArrayList<Car>>() {}.getType();
-
-        // Parse the JSON string into Java User objects and return the list
-        return new Gson().fromJson(json, listType);
+        }
     }
 }
