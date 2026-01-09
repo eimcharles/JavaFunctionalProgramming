@@ -10,19 +10,19 @@
 #### Functional Identities Examples: 
 | Functional Identity | Role | Interface(s) | Example Number |
 | :--- | :--- | :--- | :--- |
-| **Consumer** | The "Action" | `Consumer<T>`, `BiConsumer<T, U>` | [ExampleOne.java](src/functionalInterfaces/functionalIdentities/consumer/ExampleOne.java)<br>[ExampleTwo.java](src/functionalInterfaces/functionalIdentities/consumer/ExampleTwo.java)<br>[ExampleThree.java](src/functionalInterfaces/functionalIdentities/consumer/ExampleThree.java) |
-| **Supplier** | The "Origin" | `Supplier<T>` | [ExampleOne.java](src/functionalInterfaces/functionalIdentities/supplier/ExampleOne.java) |
-| **Gatekeeper** | The "Validator" | `Predicate<T>`, `BiPredicate<T, U>` | [ExampleOne.java](src/functionalInterfaces/functionalIdentities/gatekeeper/ExampleOne.java)<br>[ExampleTwo.java](src/functionalInterfaces/functionalIdentities/gatekeeper/ExampleTwo.java) |
-| **Transformer** | The "Mapper" | `Function<T, R>`, `BiFunction<T, U, R>` | [ExampleOne.java](src/functionalInterfaces/functionalIdentities/transformer/ExampleOne.java)<br>[ExampleTwo.java](src/functionalInterfaces/functionalIdentities/transformer/ExampleTwo.java) |
+| **Consumer** | The "Action" | `Consumer<T>`, `BiConsumer<T, U>` | [ExampleOne.java](src/main/java/com/eimc/functionalInterfaces/functionalIdentities/consumer/ExampleOne.java)<br>[ExampleTwo.java](src/main/java/com/eimc/functionalInterfaces/functionalIdentities/consumer/ExampleTwo.java)<br>[ExampleThree.java](src/main/java/com/eimc/functionalInterfaces/functionalIdentities/consumer/ExampleThree.java) |
+| **Supplier** | The "Origin" | `Supplier<T>` | [ExampleOne.java](src/main/java/com/eimc/functionalInterfaces/functionalIdentities/supplier/ExampleOne.java) |
+| **Gatekeeper** | The "Validator" | `Predicate<T>`, `BiPredicate<T, U>` | [ExampleOne.java](src/main/java/com/eimc/functionalInterfaces/functionalIdentities/gatekeeper/ExampleOne.java)<br>[ExampleTwo.java](src/main/java/com/eimc/functionalInterfaces/functionalIdentities/gatekeeper/ExampleTwo.java) |
+| **Transformer** | The "Mapper" | `Function<T, R>`, `BiFunction<T, U, R>` | [ExampleOne.java](src/main/java/com/eimc/functionalInterfaces/functionalIdentities/transformer/ExampleOne.java)<br>[ExampleTwo.java](src/main/java/com/eimc/functionalInterfaces/functionalIdentities/transformer/ExampleTwo.java) |
 
 ---
 #### Combinator Pattern Example: used to chain validation rules into a single, fluent pipeline.
 
 | Component | Source Link | Description |
 | :--- | :--- | :--- |
-| **Main Orchestrator** | [Main.java](./src/functionalInterfaces/combinatorPattern/Main.java) | Builds the validation chain and processes the `User` list. |
-| **Business Contract** | [UserValidator.java](./src/functionalInterfaces/combinatorPattern/UserValidator.java) | Functional interface for "shape" of `User` validation. |
-| **Concrete Rule** | [ReservedFirstNamesValidator.java](./src/functionalInterfaces/combinatorPattern/ReservedFirstNamesValidator.java) | Specific implementation for filtering system-reserved first names. |
+| **Main Orchestrator** | [Main.java](src/main/java/com/eimc/functionalInterfaces/combinatorPattern/Main.java) | Builds the validation chain and processes the `User` list. |
+| **Business Contract** | [UserValidator.java](src/main/java/com/eimc/functionalInterfaces/combinatorPattern/UserValidator.java) | Functional interface for "shape" of `User` validation. |
+| **Concrete Rule** | [ReservedFirstNamesValidator.java](src/main/java/com/eimc/functionalInterfaces/combinatorPattern/ReservedFirstNamesValidator.java) | Specific implementation for filtering system-reserved first names. |
 
 ---
 
