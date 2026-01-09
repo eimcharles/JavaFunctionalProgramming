@@ -12,36 +12,44 @@ import java.util.List;
 
 public class ExampleOne {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        List<User> userList = MockData.getUsers();
-        List<Car> carList = MockData.getCars();
+        try {
 
-        ///  Example 1:
-        System.out.println("Example one: using the Stream class to display 2 users from users.json file");
-        userList.stream().
-                limit(2).
-                forEach(System.out::println);
+            List<User> userList = MockData.getUsers();
+            List<Car> carList = MockData.getCars();
 
-        System.out.println();
+            ///  Example 1:
+            System.out.println("Example one: using the Stream class to display 2 users from users.json file");
+            userList.stream().
+                    limit(2).
+                    forEach(System.out::println);
 
-        ///  Example 2:
-        System.out.println("Example two: using the Stream class to display 2 cars from cars.json file");
-        carList.stream().
-                limit(2).
-                forEach(System.out::println);
+            System.out.println();
 
-        System.out.println();
+            ///  Example 2:
+            System.out.println("Example two: using the Stream class to display 2 cars from cars.json file");
+            carList.stream().
+                    limit(2).
+                    forEach(System.out::println);
 
-        ///  Example 3:
-        System.out.println("Example three: declarative approach to filter cars by brand");
-        declarativeApproach(carList);
-        System.out.println();
+            System.out.println();
 
-        ///  Example 4:
-        System.out.println("Example four: imperative approach to filter cars by brand");
-        imperativeApproach(carList);
-        System.out.println();
+            ///  Example 3:
+            System.out.println("Example three: declarative approach to filter cars by brand");
+            declarativeApproach(carList);
+            System.out.println();
+
+            ///  Example 4:
+            System.out.println("Example four: imperative approach to filter cars by brand");
+            imperativeApproach(carList);
+            System.out.println();
+
+        } catch (IOException e) {
+
+            throw new RuntimeException(e);
+
+        }
 
     }
 
