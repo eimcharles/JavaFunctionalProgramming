@@ -1,0 +1,142 @@
+[
+  {
+    "registrationNumber": "123_1",
+    "rentalPricePerDay": 45.00,
+    "brand": "VOLKSWAGEN",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_2",
+    "rentalPricePerDay": 115.50,
+    "brand": "BMW",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": true
+  },
+  {
+    "registrationNumber": "123_3",
+    "rentalPricePerDay": 52.00,
+    "brand": "MAZDA",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_4",
+    "rentalPricePerDay": 48.75,
+    "brand": "HONDA",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_5",
+    "rentalPricePerDay": 180.00,
+    "brand": "MERCEDES",
+    "fuelType": "GASOLINE",
+    "isCarBooked": true
+  },
+  {
+    "registrationNumber": "123_6",
+    "rentalPricePerDay": 39.99,
+    "brand": "VOLKSWAGEN",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_7",
+    "rentalPricePerDay": 130.00,
+    "brand": "BMW",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_8",
+    "rentalPricePerDay": 58.00,
+    "brand": "MAZDA",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_9",
+    "rentalPricePerDay": 65.00,
+    "brand": "HONDA",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": true
+  },
+  {
+    "registrationNumber": "123_10",
+    "rentalPricePerDay": 210.00,
+    "brand": "MERCEDES",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_11",
+    "rentalPricePerDay": 42.50,
+    "brand": "VOLKSWAGEN",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_12",
+    "rentalPricePerDay": 99.00,
+    "brand": "BMW",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_13",
+    "rentalPricePerDay": 54.00,
+    "brand": "MAZDA",
+    "fuelType": "GASOLINE",
+    "isCarBooked": true
+  },
+  {
+    "registrationNumber": "123_14",
+    "rentalPricePerDay": 46.00,
+    "brand": "HONDA",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_15",
+    "rentalPricePerDay": 155.00,
+    "brand": "MERCEDES",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_16",
+    "rentalPricePerDay": 41.00,
+    "brand": "VOLKSWAGEN",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": true
+  },
+  {
+    "registrationNumber": "123_17",
+    "rentalPricePerDay": 140.00,
+    "brand": "BMW",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_18",
+    "rentalPricePerDay": 57.50,
+    "brand": "MAZDA",
+    "fuelType": "GASOLINE",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_19",
+    "rentalPricePerDay": 49.00,
+    "brand": "HONDA",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": false
+  },
+  {
+    "registrationNumber": "123_20",
+    "rentalPricePerDay": 195.00,
+    "brand": "MERCEDES",
+    "fuelType": "ELECTRIC",
+    "isCarBooked": true
+  }
+]
