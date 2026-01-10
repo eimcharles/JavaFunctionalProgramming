@@ -5,7 +5,7 @@
 ![Functional](https://img.shields.io/badge/Paradigm-Functional-FFD166?logo=lambdatest&logoColor=black)
 ![Java Streams](https://img.shields.io/badge/Java-Streams_API-FFD166?logo=openjdk&logoColor=black)
 
-#### [Functional Interfaces Learning resource / certificate](https://amigoscode.com/certificates/d190ec44-28ad-49c7-b19c-987b01e9f740)
+#### [Functional Interfaces Learning resource / certificate](https://amigoscode.com/certificates/84093b57-597d-45f4-bd17-51eb4b3e3a2a)
 
 ---
 
