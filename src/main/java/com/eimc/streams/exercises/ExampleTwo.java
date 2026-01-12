@@ -9,7 +9,7 @@ public class ExampleTwo {
     public static void main(String[] args) {
 
         List<Integer> integerList = List.of(1, 2, 3, 100, 23, 93, 99);
-        List<Integer> duplicatetIntegerList = List.of(1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 9, 9, 9);
+        List<Integer> duplicateIntegerList = List.of(1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 9, 9, 9);
 
         int minInlist;
         int maxInlist;
@@ -44,12 +44,12 @@ public class ExampleTwo {
 
         /// Example 3: using distinct() to remove duplicates
         System.out.println("Example three: using distinct() to remove duplicate elements in a list");
-        duplicatetIntegerList.stream().distinct().toList().forEach(System.out::println);
+        duplicateIntegerList.stream().distinct().toList().forEach(System.out::println);
         System.out.println();
 
         /// Example 4: list to set conversion
         System.out.println("Example four: converting a list to set to remove duplicate elements");
-        duplicatetIntegerList.stream().collect(Collectors.toSet()).forEach(System.out::println);
+        duplicateIntegerList.stream().collect(Collectors.toSet()).forEach(System.out::println);
         System.out.println();
     }
 }
