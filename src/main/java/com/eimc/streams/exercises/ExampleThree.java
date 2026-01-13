@@ -3,7 +3,6 @@ package com.eimc.streams.exercises;
 import com.eimc.domain.Car;
 import com.eimc.streams.mockData.MockData;
 
-import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Comparator;
 import java.util.List;

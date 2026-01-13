@@ -6,7 +6,6 @@ import com.eimc.domain.Car;
 import com.eimc.domain.User;
 import com.eimc.streams.mockData.MockData;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 

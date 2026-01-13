@@ -4,7 +4,6 @@ import com.eimc.domain.Brand;
 import com.eimc.domain.Car;
 import com.eimc.streams.mockData.MockData;
 
-import java.io.IOException;
 import java.util.List;
 
 public class ExampleTwo {
