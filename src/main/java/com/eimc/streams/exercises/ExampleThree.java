@@ -67,26 +67,26 @@ public class ExampleThree {
         System.out.println();
 
         ///  Example 6: using takeWhile() takes elements while a condition is met
-        System.out.println("Example six: using takeWhile() takes elements as long as the condition is true");
+        System.out.println("Example six: using takeWhile() takes elements as long as the condition is true, drops the rest of elements");
         cheapGasCars = carList.stream()
+                .filter(Car::isGasoline)
                 ///  Sort the cars in ascending order by rental price per day
                 .sorted(Comparator.comparing(Car::getRentalPricePerDay))
                 ///  Take all the cheap cars until the first car over 100$
                 .takeWhile(car -> car.getRentalPricePerDay().compareTo(new BigDecimal("100")) < 0)
-                .filter(Car::isGasoline)
                 .toList();
 
         cheapGasCars.forEach(System.out::println);
         System.out.println();
 
         ///  Example 7: using dropWhile() drops elements while a condition is met
-        System.out.println("Example seven: using dropWhile() drop elements as long as the condition is true, then collect the rest");
+        System.out.println("Example seven: using dropWhile() drops elements as long as the condition is true, then collect the rest of elements");
         expensiveGasCars = carList.stream()
+                .filter(Car::isGasoline)
                 ///  Sort the cars in ascending order by rental price per day
                 .sorted(Comparator.comparing(Car::getRentalPricePerDay))
                 ///  Drop all the cheap cars until you hit the first car over 100$ and start collecting
                 .dropWhile(car -> car.getRentalPricePerDay().compareTo(new BigDecimal("100")) < 0)
-                .filter(Car::isGasoline)
                 .toList();
 
         expensiveGasCars.forEach(System.out::println);
