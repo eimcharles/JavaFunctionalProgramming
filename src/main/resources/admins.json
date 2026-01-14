@@ -1,0 +1,72 @@
+[
+  {
+    "adminId": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "firstName": "James",
+    "lastName": "Holden",
+    "email": "j.holden@eimc.com",
+    "password": "password123"
+  },
+  {
+    "adminId": "550e8400-e29b-41d4-a716-446655440000",
+    "firstName": "Naomi",
+    "lastName": "Nagata",
+    "email": "n.nagata@eimc.com",
+    "password": "securePass01"
+  },
+  {
+    "adminId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+    "firstName": "Amos",
+    "lastName": "Burton",
+    "email": "a.burton@eimc.com",
+    "password": "lastcitystanding"
+  },
+  {
+    "adminId": "8d393f60-9dad-11d1-80b4-00c04fd430c8",
+    "firstName": "Alex",
+    "lastName": "Kamal",
+    "email": "a.kamal@eimc.com",
+    "password": "roci_pilot88"
+  },
+  {
+    "adminId": "a47ac10b-58cc-4372-a567-0e02b2c3d471",
+    "firstName": "Christen",
+    "lastName": "Avalara",
+    "email": "c.avasarala@eimc.com",
+    "password": "earthFirst00"
+  },
+  {
+    "adminId": "b47ac10b-58cc-4372-a567-0e02b2c3d472",
+    "firstName": "Bobbie",
+    "lastName": "Draper",
+    "email": "b.draper@eimc.com",
+    "password": "marsGoliath"
+  },
+  {
+    "adminId": "c47ac10b-58cc-4372-a567-0e02b2c3d473",
+    "firstName": "Camino",
+    "lastName": "Drummer",
+    "email": "c.drummer@eimc.com",
+    "password": "belt_status_1"
+  },
+  {
+    "adminId": "d47ac10b-58cc-4372-a567-0e02b2c3d474",
+    "firstName": "Fred",
+    "lastName": "Johnson",
+    "email": "f.johnson@eimc.com",
+    "password": "tychoStation"
+  },
+  {
+    "adminId": "e47ac10b-58cc-4372-a567-0e02b2c3d475",
+    "firstName": "Klaes",
+    "lastName": "Ashford",
+    "email": "k.ashford@eimc.com",
+    "password": "ghostKnife"
+  },
+  {
+    "adminId": "f47ac10b-58cc-4372-a567-0e02b2c3d476",
+    "firstName": "Julie",
+    "lastName": "Mao",
+    "email": "j.mao@eimc.com",
+    "password": "razorback11"
+  }
+]

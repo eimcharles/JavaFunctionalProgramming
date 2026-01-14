@@ -1,0 +1,142 @@
+[
+  {
+    "userBookingID": "a1b2c3d4-e5f6-4a5b-8c9d-0e1f2a3b4c5d",
+    "user": { "userId": "f47ac10b-58cc-4372-a567-0e02b2c3d479", "firstName": "Alice", "lastName": "Smith" },
+    "car": { "registrationNumber": "123_1", "rentalPricePerDay": 45.00, "brand": "VOLKSWAGEN", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-01T10:30:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "b2c3d4e5-f6a7-4b5c-8d9e-0f1a2b3c4d5e",
+    "user": { "userId": "550e8400-e29b-41d4-a716-446655440000", "firstName": "Bob", "lastName": "Johnson" },
+    "car": { "registrationNumber": "123_2", "rentalPricePerDay": 115.50, "brand": "BMW", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-02T11:45:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "c3d4e5f6-a7b8-4c5d-8e9f-0a1b2c3d4e5f",
+    "user": { "userId": "6ba7b810-9dad-11d1-80b4-00c04fd430c8", "firstName": "Charlie", "lastName": "Davis" },
+    "car": { "registrationNumber": "123_3", "rentalPricePerDay": 52.00, "brand": "MAZDA", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-03T09:15:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "d4e5f6a7-b8c9-4d5e-8f9a-0b1c2d3e4f5a",
+    "user": { "userId": "8d393f60-9dad-11d1-80b4-00c04fd430c8", "firstName": "Diana", "lastName": "Prince" },
+    "car": { "registrationNumber": "123_4", "rentalPricePerDay": 48.75, "brand": "HONDA", "fuelType": "GASOLINE", "isCarBooked": false },
+    "bookingTime": "2026-01-04T14:20:00",
+    "isBookingActive": false
+  },
+  {
+    "userBookingID": "e5f6a7b8-c9d0-4e5f-8a9b-0c1d2e3f4a5b",
+    "user": { "userId": "a47ac10b-58cc-4372-a567-0e02b2c3d471", "firstName": "Ethan", "lastName": "Hunt" },
+    "car": { "registrationNumber": "123_5", "rentalPricePerDay": 180.00, "brand": "MERCEDES", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-05T16:00:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "f6a7b8c9-d0e1-4f5a-8b9c-0d1e2f3a4b5c",
+    "user": { "userId": "b47ac10b-58cc-4372-a567-0e02b2c3d472", "firstName": "Fiona", "lastName": "Gallagher" },
+    "car": { "registrationNumber": "123_6", "rentalPricePerDay": 39.99, "brand": "VOLKSWAGEN", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-06T08:45:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "a7b8c9d0-e1f2-4a5b-8c9d-0e1f2a3b4c5d",
+    "user": { "userId": "c47ac10b-58cc-4372-a567-0e02b2c3d473", "firstName": "George", "lastName": "Miller" },
+    "car": { "registrationNumber": "123_7", "rentalPricePerDay": 130.00, "brand": "BMW", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-07T12:00:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "b8c9d0e1-f2a3-4b5c-8d9e-0f1a2b3c4d5e",
+    "user": { "userId": "d47ac10b-58cc-4372-a567-0e02b2c3d474", "firstName": "Hannah", "lastName": "Abbott" },
+    "car": { "registrationNumber": "123_8", "rentalPricePerDay": 58.00, "brand": "MAZDA", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-08T13:10:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "c9d0e1f2-a3b4-4c5d-8e9f-0a1b2c3d4e5f",
+    "user": { "userId": "e47ac10b-58cc-4372-a567-0e02b2c3d475", "firstName": "Ian", "lastName": "Wright" },
+    "car": { "registrationNumber": "123_9", "rentalPricePerDay": 65.00, "brand": "HONDA", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-09T17:30:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "d0e1f2a3-b4c5-4d5e-8f9a-0b1c2d3e4f5a",
+    "user": { "userId": "f47ac10b-58cc-4372-a567-0e02b2c3d476", "firstName": "Jenny", "lastName": "Sloan" },
+    "car": { "registrationNumber": "123_10", "rentalPricePerDay": 210.00, "brand": "MERCEDES", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-10T11:00:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "e1f2a3b4-c5d6-4e5f-8a9b-0c1d2e3f4a5b",
+    "user": { "userId": "047ac10b-58cc-4372-a567-0e02b2c3d477", "firstName": "Kevin", "lastName": "Hart" },
+    "car": { "registrationNumber": "123_11", "rentalPricePerDay": 42.50, "brand": "VOLKSWAGEN", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-11T15:20:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "f2a3b4c5-d6e7-4f5a-8b9c-0d1e2f3a4b5c",
+    "user": { "userId": "147ac10b-58cc-4372-a567-0e02b2c3d478", "firstName": "Laura", "lastName": "Palmer" },
+    "car": { "registrationNumber": "123_12", "rentalPricePerDay": 99.00, "brand": "BMW", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-12T10:45:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "a3b4c5d6-e7f8-4a5b-8c9d-0e1f2a3b4c5d",
+    "user": { "userId": "247ac10b-58cc-4372-a567-0e02b2c3d479", "firstName": "Mike", "lastName": "Ross" },
+    "car": { "registrationNumber": "123_13", "rentalPricePerDay": 54.00, "brand": "MAZDA", "fuelType": "GASOLINE", "isCarBooked": false },
+    "bookingTime": "2026-01-13T14:00:00",
+    "isBookingActive": false
+  },
+  {
+    "userBookingID": "b4c5d6e7-f8a9-4b5c-8d9e-0f1a2b3c4d5e",
+    "user": { "userId": "347ac10b-58cc-4372-a567-0e02b2c3d480", "firstName": "Nina", "lastName": "Simone" },
+    "car": { "registrationNumber": "123_14", "rentalPricePerDay": 46.00, "brand": "HONDA", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-14T09:30:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "c5d6e7f8-a9b0-4c5d-8e9f-0a1b2c3d4e5f",
+    "user": { "userId": "447ac10b-58cc-4372-a567-0e02b2c3d481", "firstName": "Oscar", "lastName": "Wilde" },
+    "car": { "registrationNumber": "123_15", "rentalPricePerDay": 155.00, "brand": "MERCEDES", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-15T16:45:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "d6e7f8a9-b0c1-4d5e-8f9a-0b1c2d3e4f5a",
+    "user": { "userId": "547ac10b-58cc-4372-a567-0e02b2c3d482", "firstName": "Parker", "lastName": "Posey" },
+    "car": { "registrationNumber": "123_16", "rentalPricePerDay": 41.00, "brand": "VOLKSWAGEN", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-16T11:15:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "e7f8a9b0-c1d2-4e5f-8a9b-0c1d2e3f4a5b",
+    "user": { "userId": "647ac10b-58cc-4372-a567-0e02b2c3d483", "firstName": "Quinn", "lastName": "Fabray" },
+    "car": { "registrationNumber": "123_17", "rentalPricePerDay": 140.00, "brand": "BMW", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-17T13:00:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "f8a9b0c1-d2e3-4f5a-8b9c-0d1e2f3a4b5c",
+    "user": { "userId": "747ac10b-58cc-4372-a567-0e02b2c3d484", "firstName": "Riley", "lastName": "Reid" },
+    "car": { "registrationNumber": "123_18", "rentalPricePerDay": 57.50, "brand": "MAZDA", "fuelType": "GASOLINE", "isCarBooked": true },
+    "bookingTime": "2026-01-18T10:00:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "a9b0c1d2-e3f4-4a5b-8c9d-0e1f2a3b4c5d",
+    "user": { "userId": "847ac10b-58cc-4372-a567-0e02b2c3d485", "firstName": "Steven", "lastName": "Strange" },
+    "car": { "registrationNumber": "123_19", "rentalPricePerDay": 49.00, "brand": "HONDA", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-19T14:30:00",
+    "isBookingActive": true
+  },
+  {
+    "userBookingID": "b0c1d2e3-f4a5-4b5c-8d9e-0f1a2b3c4d5e",
+    "user": { "userId": "947ac10b-58cc-4372-a567-0e02b2c3d486", "firstName": "Tina", "lastName": "Fey" },
+    "car": { "registrationNumber": "123_20", "rentalPricePerDay": 195.00, "brand": "MERCEDES", "fuelType": "ELECTRIC", "isCarBooked": true },
+    "bookingTime": "2026-01-20T18:00:00",
+    "isBookingActive": true
+  }
+]
