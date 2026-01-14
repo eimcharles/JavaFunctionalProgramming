@@ -42,8 +42,8 @@ public class MapExample {
 
         Optional<AdminDTO> optionalAdminDTOByAdminId = adminList.stream()
                 .filter(admin -> admin.getAdminId().equals(targetAdminId))
-                .findFirst()
-                .map(AdminDTO::map);
+                .map(AdminDTO::map)
+                .findFirst();
 
         optionalAdminDTOByAdminId.ifPresentOrElse(System.out::println,
                 () -> System.out.println("Admin not found with ID: " + targetAdminId));
