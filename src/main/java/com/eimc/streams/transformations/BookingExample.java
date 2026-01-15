@@ -29,7 +29,7 @@ public class BookingExample {
         System.out.println();
 
         ///  Example 3:
-        System.out.println("Example three: display all active bookings and associated booked cars from the bookingList");
+        System.out.println("Example three: display all booked cars associated to a booking from the bookingList");
         List<Car> bookedCars = activeBookings.stream()
                 ///  Takes a booking a returns the associated car object
                 .map(booking -> booking.getCar())
@@ -39,7 +39,7 @@ public class BookingExample {
         System.out.println();
 
         ///  Example 4: return the available cars based on the booked cars list
-        System.out.println("Example four: display all available cars that are not associated to a booking from the bookingList");
+        System.out.println("Example four: display all available cars in the carList by comparing them to the booked cars in the bookingList");
         List<Car> availableCars = carList.stream()
                 ///  Filter the available cars based on booked cars
                 .filter(car -> !bookedCars.contains(car))
@@ -49,7 +49,7 @@ public class BookingExample {
         System.out.println();
 
         ///  Example 5: look at the car list and get all available cars
-        System.out.println("Example five: display all available cars in carList using the booked cars in the bookingList ");
+        System.out.println("Example five: display all available cars in carList");
         List<Car> availableCarsInCarList = carList.stream()
                 .filter(car -> !car.isCarBooked())
                 .toList();
