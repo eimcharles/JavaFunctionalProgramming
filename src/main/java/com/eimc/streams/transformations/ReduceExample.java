@@ -16,7 +16,7 @@ public class ReduceExample {
         List<Car> carList = MockData.getCars();
 
         ///  Example 1:
-        System.out.println("Example one: mapping a car object to a double and returning the average price for the carList");
+        System.out.println("Example one: mapping a car object to a double and returning the average rental price per day for the carList");
         BigDecimal averageCarRentalPricePerDay = carList.stream()
                 ///  Convert each car to its price per day
                 .map(Car::getRentalPricePerDay)
@@ -25,7 +25,7 @@ public class ReduceExample {
                 ///  Divide by size with 2 decimal points and round up
                         .divide(BigDecimal.valueOf(carList.size()), 2, RoundingMode.HALF_UP);
 
-        System.out.println("THe average price per day for a rental is: " + averageCarRentalPricePerDay);
+        System.out.println("The average price per day for a rental is: " + averageCarRentalPricePerDay);
 
     }
 
