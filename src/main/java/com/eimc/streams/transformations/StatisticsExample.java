@@ -55,7 +55,8 @@ public class StatisticsExample {
                 .map(Car::getRentalPricePerDay)
                 .min(Comparator.naturalOrder());
 
-        cheapestCar.ifPresentOrElse(System.out::println, () -> System.out.println("Unable to find least expensive car"));
+        cheapestCar.ifPresentOrElse(price -> System.out.println(price + "$"),
+                () -> System.out.println("Unable to find least expensive car"));
         System.out.println();
 
         /// Example 7:
@@ -64,7 +65,8 @@ public class StatisticsExample {
                 .map(Car::getRentalPricePerDay)
                 .max(Comparator.naturalOrder());
 
-        mostExpensiveCar.ifPresentOrElse(System.out::println, () -> System.out.println("Unable to find most expensive car"));
+        mostExpensiveCar.ifPresentOrElse(price -> System.out.println(price + "$"),
+                () -> System.out.println("Unable to find most expensive car"));
         System.out.println();
 
         /// Example 8:
@@ -74,7 +76,7 @@ public class StatisticsExample {
                 .reduce(BigDecimal.ZERO, BigDecimal::add)
                 .divide(BigDecimal.valueOf(carList.size()), 2, RoundingMode.HALF_UP);
 
-        System.out.println("The average car rental price per day for a rental is: " + averageCarRentalPricePerDay);
+        System.out.println("The average car rental price per day for a rental is: " + averageCarRentalPricePerDay + "$");
         System.out.println();
 
         /// Example 9:
@@ -83,7 +85,7 @@ public class StatisticsExample {
                 .map(Car::getRentalPricePerDay)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
 
-        System.out.println("The total sum of all the rental prices per day is: " + totalSumOfRentalCostsPerDay);
+        System.out.println("The total sum of all the rental prices per day is: " + totalSumOfRentalCostsPerDay + "$");
         System.out.println();
 
         /// Example 10:
@@ -93,7 +95,7 @@ public class StatisticsExample {
                 .mapToDouble(BigDecimal::doubleValue)
                 .summaryStatistics();
 
-        System.out.println(doubleSummaryStatistics.getMax());
+        System.out.println(doubleSummaryStatistics.getMax() + "$");
 
     }
 

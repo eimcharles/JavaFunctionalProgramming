@@ -25,7 +25,7 @@ public class ReduceExample {
                 ///  Divide by size with 2 decimal points and round up
                         .divide(BigDecimal.valueOf(carList.size()), 2, RoundingMode.HALF_UP);
 
-        System.out.println("The average price per day for a rental is: " + averageCarRentalPricePerDay);
+        System.out.println("The average price per day for a rental is: " + averageCarRentalPricePerDay + "$");
 
     }
 
