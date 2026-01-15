@@ -36,7 +36,7 @@ public class MapExample {
         System.out.println();
 
         ///  Example 3:
-        System.out.println("Example three: converting a specific admin to an adminDTO based on a passed adminId");
+        System.out.println("Example three: converting a specific admin to an adminDTO based on the passed adminId");
 
         UUID targetAdminId = UUID.fromString("b47ac10b-58cc-4372-a567-0e02b2c3d472");
 
