@@ -1,4 +1,4 @@
-package com.eimc.streams.exercises;
+package com.eimc.streams.exerciseOne;
 
 
 import com.eimc.domain.Brand;
