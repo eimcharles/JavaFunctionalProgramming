@@ -27,6 +27,20 @@
 | **Concrete Rule** | [ReservedFirstNamesValidator.java](src/main/java/com/eimc/functionalInterfaces/combinatorPattern/ReservedFirstNamesValidator.java) | Specific implementation for filtering system-reserved first names. |
 
 ---
+#### [Streams Learning resource / certificate](https://amigoscode.com/certificates/536c1db4-c015-4068-913e-6a32ca130bf6)
 
+#### Streams Transformation Examples:
+| Transformation | Example |
+| :--- | :--- | 
+| **map()** | [MapExample.java](src/main/java/com/eimc/streams/transformations/MapExample.java)<br>
+| **flatMap()** | [FlatMapExample.java](src/main/java/com/eimc/streams/transformations/FlatMapExample.java)<br>
+| **reduce()** | [ReduceExample.java](src/main/java/com/eimc/streams/transformations/ReduceExample.java)<br>
+| **groupingBy()** | [GroupingExample.java](src/main/java/com/eimc/streams/transformations/GroupingExample.java)<br>
+| **partitioningBy()** | [PartitionExample.java](src/main/java/com/eimc/streams/transformations/PartitionExample.java)<br>
+| **sorted()** | [SortingExample.java](src/main/java/com/eimc/streams/transformations/SortingExample.java)<br>
+| **collect()** | [CollectorsAndCombiner.java](src/main/java/com/eimc/streams/transformations/CollectorsAndCombiner.java)<br>
+
+
+---
 
 
