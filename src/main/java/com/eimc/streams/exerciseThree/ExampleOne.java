@@ -1,0 +1,43 @@
+package com.eimc.streams.exerciseThree;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ExampleOne {
+
+    public static void main(String[] args) {
+
+        List<Transaction> transactions = new ArrayList<>();
+        populateTransactions(transactions);
+
+        ///  Example 1: Filter by type
+
+        ///  Example 2: Total amount for all transactions
+
+        ///  Example 3: Max transaction amount
+
+        ///  Example 4: Count transactions by type
+
+        ///  Example 5: Retrieve a list of distinct customers from all transactions
+
+    }
+
+    public static void populateTransactions(List<Transaction> transactionList){
+
+        for (int index = 1; index <= 100; index++) {
+
+            transactionList.add(
+
+                    new Transaction(
+                            index,
+                            Math.random() * 1000, index % 2 == 0 ? "CREDIT" : "DEBIT",
+                            "2024-" + String.format("%02d", (index % 12) + 1) +
+                                    "-" + String.format("%02d", (index % 28) + 1),
+
+                    new Customer(index, "Customer" + index, "customer" + index + "@example.com"))
+            );
+
+        }
+    }
+
+}
