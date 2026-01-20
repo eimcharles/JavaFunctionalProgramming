@@ -10,15 +10,8 @@ public class ExampleOne {
         List<Transaction> transactions = new ArrayList<>();
         populateTransactions(transactions);
 
-        ///  Example 1: Filter by type
-
-        ///  Example 2: Total amount for all transactions
-
-        ///  Example 3: Max transaction amount
-
-        ///  Example 4: Count transactions by type
-
-        ///  Example 5: Retrieve a list of distinct customers from all transactions
+        ///  Example 0: iterating through all the generated transactions
+        transactions.forEach(System.out::println);
 
     }
 
