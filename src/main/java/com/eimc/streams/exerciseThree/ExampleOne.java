@@ -46,6 +46,7 @@ public class ExampleOne {
         ///  Example 4:
         System.out.println("Example four: counting the amount of transactions by type CREDIT / DEBIT");
         Map<String, Long> transactionTypeCount = transactions.stream()
+                ///  Grouping by type and count
                 .collect(Collectors.groupingBy(Transaction::type, Collectors.counting()));
 
         transactionTypeCount.forEach( (type, count) ->
@@ -53,7 +54,6 @@ public class ExampleOne {
                 {
                     System.out.println("Type: " + type);
                     System.out.println("Count: " + count);
-
                 });
 
         System.out.println();
@@ -71,7 +71,9 @@ public class ExampleOne {
         ///  Example 6:
         System.out.println("Example six: retrieving all transactions strictly greater than 300$");
         transactions.stream()
+                ///  All transactions greater than 300$
                 .filter(transaction -> transaction.amount() > 300)
+                ///  Sort them by from lowest to highest
                 .sorted(Comparator.comparingDouble(Transaction::amount))
                 .forEach(transaction
                         -> System.out.println("Transaction id: " + transaction.id()
@@ -100,7 +102,9 @@ public class ExampleOne {
 
         ///  Example 8:
         System.out.println("Example eight: finding the first transaction in the transaction list");
-        Optional<Transaction> firstTransactionOptional = transactions.stream().findFirst();
+        Optional<Transaction> firstTransactionOptional = transactions.stream()
+                .findFirst();
+
         firstTransactionOptional
                 .ifPresentOrElse(System.out::println,
                         () -> System.out.println("No transactions present"));
