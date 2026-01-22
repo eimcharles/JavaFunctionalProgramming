@@ -45,6 +45,7 @@ public class ExampleTwo {
         ///  Example 4:
         System.out.println("Example four: retrieving the most recent transaction by date");
         Optional<Transaction> mostRecentTransactionsByDate = transactions.stream()
+                /// Compare by date - chronological timeline
                 .max(Comparator.comparing(Transaction::date));
 
         mostRecentTransactionsByDate
@@ -57,10 +58,11 @@ public class ExampleTwo {
         ///  Example 5:
         System.out.println("Example five: calculating the total transaction amount by customer.");
         Map<Customer, Double> totalPerCustomer = transactions.stream()
+                ///  Group by customer and sum each customers transaction amounts
                 .collect(Collectors.groupingBy(Transaction::customer, Collectors.summingDouble(Transaction::amount)));
 
-        totalPerCustomer.forEach( ((customer, aDouble) ->
-            System.out.println(customer.name() + " total amount: " + aDouble)));
+        totalPerCustomer.forEach( ((customer, customerTotalAmount) ->
+            System.out.println(customer.name() + " total amount: " + customerTotalAmount)));
 
         System.out.println();
 
@@ -69,12 +71,12 @@ public class ExampleTwo {
         Map<String, List<Transaction>> typeOfTransaction = transactions.stream()
                 .collect(Collectors.groupingBy(Transaction::type));
 
-        typeOfTransaction.forEach((type , transaction) ->
+        typeOfTransaction.forEach((type , transactionList) ->
 
                 {
                     System.out.println("Type: " + type);
-                    transaction.forEach(t ->
-                            System.out.println("Transaction id: " + t.id() + ", type " + t.type()));
+                    transactionList.forEach(transaction ->
+                            System.out.println("Transaction id: " + transaction.id() + ", type " + transaction.type()));
                 });
 
         System.out.println();
