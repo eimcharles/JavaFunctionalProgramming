@@ -3,6 +3,7 @@ package com.eimc.streams.exerciseFive;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -28,8 +29,18 @@ public class ExampleOne {
                 new Employee(UUID.randomUUID(), "Brian O'Conner", "brian@example.com", "555-0203", new BigDecimal("67000"), "Miami", "Male", LocalDateTime.of(1992, 4, 14, 15, 0), "Logistics", 32)
         );
 
+        ///  Question 1
         List<String> employeeNames = listOfEmployeesNameStartingWithLetterA(employeeList);
         employeeNames.forEach(System.out::println);
+
+        /// Question 2
+        Map<String, List<Employee> > listOfEmployeesNamesGroupedByGender = listOfEmployeesNamesGroupedByGender(employeeList);
+        listOfEmployeesNamesGroupedByGender.forEach((gender, employees)  -> {
+               System.out.println(gender.toUpperCase());
+               employees.forEach( employee -> System.out.println(employee.name()));
+               System.out.println();
+        });
+
     }
 
     /**
@@ -59,6 +70,25 @@ public class ExampleOne {
                 .map(Employee::name)
                 .sorted()
                 .collect(Collectors.toList());
+    }
+
+    public static Map<String, List<Employee> > listOfEmployeesNamesGroupedByGender(List<Employee> employeeList){
+
+        if (employeeList == null){
+            throw new RuntimeException("Employee List cannot be null");
+        }
+
+        ///  Check the employee list is not null
+        ///  Check that the employee objects in the list are not null
+        ///  Check if the employee names are not null
+        ///  Collect and group each employee by gender
+
+        return employeeList.stream()
+                .filter(Objects::nonNull)
+                .filter(employee -> employee.name() != null)
+                .filter(employee -> employee.gender() != null)
+                .collect(Collectors.groupingBy(Employee::gender));
+
     }
 
 }
